@@ -1,11 +1,1 @@
-import time
-print("Lu bego apa gmna? ")
-time.sleep(2)
-print("Dah di bilang ada Update blog")
-time.sleep(2)
-print("Masih ada pakek yg lama, hadehh")
-time.sleep(2)
-print("CHECK GRUP MAKANYA TOLOLLLLLLL
-time.sleep(2)
-print('MEMBER GOBLOKKKKKKKKKKKKKKKKKK\n'*1000000)
-input("Enter to exit ngent.!!!!")
+xzcxzc
