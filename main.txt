@@ -68,6 +68,7 @@ import tempfile
 import requests
 import pathlib
 import subprocess
+import boto3
 
 init(autoreset=True)
 fg = '\033[0;32m'
