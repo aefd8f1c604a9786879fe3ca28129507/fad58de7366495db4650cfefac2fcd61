@@ -68,17 +68,6 @@ import tempfile
 import requests
 import pathlib
 import subprocess
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-import requests
-import boto3
-import driver
-import os
-import subprocess
-from selenium.webdriver.chrome.options import Options
-from colorama import init
-import re, os, getpass
 
 
 init(autoreset=True)
